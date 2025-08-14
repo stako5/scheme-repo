@@ -1,0 +1,71 @@
+{
+  "name": "scheme-repo",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "nodemon server.js",
+    "client:dev": "vite",
+    "start": "node server.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint src --ext js,jsx --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stako5/scheme-repo.git"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.1",
+    "joi": "^17.11.0",
+    "dotenv": "^16.3.1",
+    "compression": "^1.7.4",
+    "rate-limiter-flexible": "^4.0.1",
+    "socket.io": "^4.7.4",
+    "sqlite3": "^5.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "socket.io-client": "^4.7.4",
+    "axios": "^1.6.0",
+    "zustand": "^4.4.1",
+    "react-hot-toast": "^2.4.1",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.292.0",
+    "@tanstack/react-query": "^5.8.4",
+    "react-beautiful-dnd": "^13.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.1.1",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/user-event": "^14.5.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stako5/scheme-repo/issues"
+  },
+  "homepage": "https://github.com/stako5/scheme-repo#readme",
+  "description": "Modern Database Schema Designer with AI Assistant - React + Vite"
+}
